@@ -60,7 +60,7 @@ contract CyberBank_BNB {
 
     function deposit(address inviterAddress) external payable {
         require(msg.value > 0, "Amount must be greater than zero BNB.");
-        require(msg.sender != inviterAddress, "You can not Refer youre self, Please write the adress of yor real Inviter.");
+        require(msg.sender != inviterAddress, "You can not Refer yourself, Please write the adress of yor real Inviter.");
 
         uint256 amountToContract = (msg.value * PERCENTAGE_TO_CONTRACT) / 100;
         uint256 amountToAddress = (msg.value * PERCENTAGE_TO_ADDRESS) / 100;
