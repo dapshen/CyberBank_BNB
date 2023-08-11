@@ -45,7 +45,7 @@
 pragma solidity ^0.8.0;
 
 contract CyberBank_BNB {
-    address private constant ADDRESS_TO_RECEIVE_20 = 0x494f450F13060c0215B54f4C37b6F88d14264c38; //DEV Admin adress, who will get 20% of all invested BNB
+    address private constant ADDRESS_TO_RECEIVE_20 = 0x842D14221b47a39A8D03e887dDF7c35f2B6991A0; //DEV Admin adress, who will get 20% of all invested BNB
     uint256 private constant HOURLY_PERCENTAGE = 1; // Reward percent (1= 0.1%, 10= 1%, 100= 10%)
     uint256 private constant SECONDS_IN_HOUR = 3600; //amount of seconds per reward
     uint256 private constant PERCENTAGE_TO_CONTRACT = 70; //amount, how much % from users deposit will go to the contract
